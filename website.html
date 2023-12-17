@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kunal's Database Testing!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/736x/d2/92/8b/d2928b96e0a7dc14c2e732613164083e.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        label {
+            color: white;
+            margin-right: 10px; /* Add margin to create space between label and input */
+        }
+
+        input[type="text"] {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 5px;
+            margin-right: 10px; /* Add margin to create space between input fields */
+        }
+
+        input[type="image"] {
+            width: 100px;
+            height: 50px;
+        }
+
+        main {
+            flex-grow: 1;
+            border-radius: 20px; /* Rounded corners */
+            overflow: hidden; /* Prevent background from overflowing the rounded corners */
+        }
+
+        .message-bar {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            color: white;
+            padding: 10px;
+            margin-top: 20px; /* Add margin to create space between form and message bar */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kunal's Database Testing!</h1>
+    </header>
+
+    <main>
+        <form form action="/sign_up" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required><br><br>
+
+            <label for="tell">Tell me something about you:</label>
+            <input type="text" id="tell" name="tell" required><br><br>
+
+            <label for="like">What do you like about me:</label>
+            <input type="text" id="like" name="like" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender" required><br><br>
+
+            <input type="image" src="https://cdn.discordapp.com/attachments/914116534996205639/1149788235703275520/another_submit.png" alt="Submit">
+        </form>
+
+        <!-- Message bar below the form -->
+        <div class="message-bar">
+            coding done by: Kunal <br>
+            tech stack/tech guide: Atul sir <br>
+            ui designer: Aariya <br>
+        </div>
+    </main>
+</body>
+</html>

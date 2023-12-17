@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Recorded Successfully</title>
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/736x/d2/92/8b/d2928b96e0a7dc14c2e732613164083e.jpg'); /* Replace with your actual background image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+            padding: 100px;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0); /* Transparent background */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 100px auto;
+        }
+
+        .checkmark {
+            width: 152px;
+            height: 152px;
+            fill: none;
+            stroke: #00cc00; /* Green color for the checkmark */
+            stroke-width: 4;
+            stroke-dasharray: 66; /* Total length of the path */
+            stroke-dashoffset: 66; /* Start with the path hidden */
+            animation: drawCheckmark 2s ease forwards; /* Animation definition */
+        }
+
+        /* Keyframes for the checkmark animation */
+        @keyframes drawCheckmark {
+            to {
+                stroke-dashoffset: 0; /* Draw the checkmark completely */
+            }
+        }
+
+        /* Style to make the circle transparent and static */
+        .checkmark__circle {
+            stroke-dasharray: 0; /* No visible circle */
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+    </svg>
+    <div class="container">
+        <h1>Data Recorded Successfully</h1>
+        <p>Your data has been recorded successfully. Thank you!</p>
+    </div>
+</body>
+</html>
