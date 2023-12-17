@@ -9,7 +9,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public'));
 
 // Replace your existing local MongoDB connection string with the MongoDB Atlas connection string
-const atlasUri = 'Put ur connection string';
 
 mongoose.connect(atlasUri, {
   useNewUrlParser: true,
